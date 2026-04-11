@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <script>
+<script>
   (function() {
-    var uri = window.location.toString();
-    if (uri.indexOf("fbclid=") > 0) {
+    var uri = window.location.href;
+    if (uri.indexOf("fbclid=") > -1) {
+      // Menghapus parameter tanpa merusak path utama
       var clean_uri = uri.split(/[?#]/)[0];
       window.history.replaceState({}, document.title, clean_uri);
     }
   })();
-    </script>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ridwan Masdina | Links</title>
