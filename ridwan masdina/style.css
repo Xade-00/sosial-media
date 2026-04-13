@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Video Background Utama (Pemandangan) */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent; /* Wajib transparan agar danau terlihat */
+}
+
+/* video latar belakang */
+.video-latar-belakang {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* kotak kontainer */
+.main-container {
+    width: 375px;
+    background-color: rgba(240, 237, 230, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header-video-container {
+    height: 160px; /* bukan 160% */
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+.header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ikon-profil {
+        width: 120px; 
+    height: 120px;
+    background-color: #4da6ff; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    margin-top: -60px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 15;
+}
+
+.foto-profil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nama {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.deskripsi {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+}
+
+.link-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    /* --- TAMBAHKAN KODE DI BAWAH INI --- */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #000000;        /* Mengubah warna teks jadi hitam */
+    font-weight: bold;     /* Membuat teks menjadi tebal */
+}
+
+.link-list {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* jarak antar tombol */
+}
+
+.link-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+
+.ikon {
+    width: 30px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.btn-teks {
+    flex: 1;              /* biar teks isi ruang tersisa */
+    text-align: center;   /* teks rata tengah */
+}
+
+.btn-wa {
+    background: linear-gradient(to bottom, #32cd32, #ffffff); 
+}
+
+.btn-fb {
+    background: linear-gradient(to bottom, #4d89ff, #ffffff);
+}
+
+.btn-ig {
+    background: linear-gradient(to bottom, #e600c3, #ffffff);
+}
+
+.btn-tt {
+    background: linear-gradient(to bottom, #4d4d4d, #ffffff);
+}
+
+.btn-dn {
+    background: linear-gradient(to bottom, #dc7a19, #ffffff);
+}
+
+.btn-gd {
+    background: linear-gradient(to bottom, #4dff4d, #ffffff);
+}
