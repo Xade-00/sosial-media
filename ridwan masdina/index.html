@@ -11,6 +11,11 @@
     <audio autoplay loop hidden>
         <source src="Musik/musik.mp3" type="audio/mp3">
     </audio>
+    <script>
+        document.body.addEventListener("click", function() {
+            document.getElementById("musik").play();
+        }, {once:true});
+    </script>
 
     <!--  video latar belakang -->
     <video autoplay muted loop class="video-latar-belakang">
