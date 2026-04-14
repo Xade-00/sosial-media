@@ -1,17 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* 1. Video Background Utama (Pemandangan) */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: transparent; /* Wajib transparan agar danau terlihat */
 }
 
 /* video latar belakang */
@@ -37,7 +26,7 @@ body {
     position: relative;
     z-index: 10;
     border-radius: 10px;
-    margin: auto;
+    margin: 20px auto;
     overflow: hidden;
 }
 
@@ -66,7 +55,7 @@ body {
 }
 
 .ikon-profil {
-        width: 120px; 
+    width: 120px; 
     height: 120px;
     background-color: #4da6ff; 
     border-radius: 50%;
@@ -95,7 +84,7 @@ body {
 }
 
 .deskripsi {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: normal;
@@ -106,20 +95,20 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 10px;
     box-sizing: border-box;
-    /* --- TAMBAHKAN KODE DI BAWAH INI --- */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    color: #000000;        /* Mengubah warna teks jadi hitam */
-    font-weight: bold;     /* Membuat teks menjadi tebal */
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }
 
 .link-list {
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* jarak antar tombol */
+    gap: 10px;
+    margin-top: 0px;
 }
 
 .link-btn:hover {
@@ -130,12 +119,12 @@ body {
 .ikon {
     width: 30px;
     height: auto;
-    margin-right: 0px;
+    margin-right: 25;
 }
 
 .btn-teks {
-    flex: 1;              /* biar teks isi ruang tersisa */
-    text-align: center;   /* teks rata tengah */
+    flex: 0.8;
+    text-align: center;
 }
 
 .btn-wa {
