@@ -1,4 +1,4 @@
-/* 1. Video Background Utama (Pemandangan) */
+/* body font */
 body {
     font-family: Arial, sans-serif;
 }
@@ -30,6 +30,7 @@ body {
     overflow: hidden;
 }
 
+/* video header atas foto profil */
 .header-video-container {
     height: 100%; /* bukan 160% */
     width: 100%;
@@ -44,16 +45,18 @@ body {
     display: block
 }
 
+/* kontainer putih transparan */
 .content-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px 25px 20px;
+    padding: 0 15px 15px 15px;
     box-sizing: border-box;
     position: relative;
 }
 
+/* ikon foto profil */
 .ikon-profil {
     width: 120px; 
     height: 120px;
@@ -69,6 +72,7 @@ body {
     z-index: 15;
 }
 
+/* foto profil */
 .foto-profil {
     width: 100%;
     height: 100%;
@@ -76,6 +80,7 @@ body {
     display: block;
 }
 
+/* nama */
 .nama {
     margin-top: 10px;
     font-size: 24px;
@@ -83,6 +88,7 @@ body {
     color: #000;
 }
 
+/* deskripsi */
 .deskripsi {
     margin-top: 5px;
     margin-bottom: 15px;
@@ -91,6 +97,7 @@ body {
     color: #333;
 }
 
+/* tombol link */
 .link-btn {
     width: 100%;
     display: flex;
@@ -116,17 +123,20 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
 
+/* ikon sosial media */
 .ikon {
     width: 30px;
     height: auto;
     margin-right: 20;
 }
 
+/* teks di tombol */
 .btn-teks {
     flex: 0.8;
     text-align: center;
 }
 
+/* warna tombol */
 .btn-wa {
     background: linear-gradient(to bottom, #32cd32, #ffffff); 
 }
